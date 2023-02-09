@@ -1,0 +1,8 @@
+{
+  "type": "module",
+
+  "dependencies": {
+    "emailjs": "^4.0.1",
+    "validator": "^13.9.0"
+  }
+}
