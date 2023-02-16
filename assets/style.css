@@ -42,6 +42,16 @@ nav {
     gap: .8rem;
 }
 
+.link a {
+    padding: .2rem .3rem !important;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.link a:hover {
+    background: #dbdbdb60;
+}
+
 /* Container Azul */
 .container {
     width: 80% !important;
@@ -80,24 +90,47 @@ nav {
 
 /* Serviços */
 
-.card-content-2{
-    background: red;
-    gap:20px;
-    height: 60vh;
+.services-container h2{
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
 }
 
-.card-servico{
-    background: #00C8FF;
+.card-servico-2{
+    width: 90% !important;
+    background: #fff;
+    box-shadow: 2px 2px 10px #d3d3d3;
+    border-radius: 10px;
     margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+    margin-left: 4% !important;
 }
 
-.card-servico img{
-    width: 96.8% !important;
+.icone-card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.card-servico-2 img{
+    width: 50px !important;
+    margin: 20px !important;
+}
 
+.card-servico-2 h3{
+    font-size: 24px;
+}
+
+.card-servico-2 p{
+    width: 90% !important;
+    color: #515151e5;
+}
 
 /* Contato */ 
+
+.c-container {
+    margin: 2.5rem 0rem !important;
+}
 
 .c-container h2 {
     font-weight: 700;
@@ -114,6 +147,7 @@ form {
     box-shadow: 3px 3px 15px #d3d3d3;
     border-radius: 10px;
     background: #ffffff;
+    height: 410px;
 }
 
 .form-data input {
@@ -147,6 +181,7 @@ form {
 .form-data textarea:hover,
 .form-data button:focus {
     box-shadow: 0 0 0 3px #3f69ff9a;
+    border: 1px solid #1c4cfa !important;
 }
 
 .form-data button {
@@ -158,4 +193,28 @@ form {
     border-radius: 3px;
     background:  #1c4cfa;
     color: #ffffff;
+}
+
+.robot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.robot img {
+    width: 380px;
+}
+
+@media screen and (max-width: 768px) {
+    .robot {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1267px) {
+    .card-servico-2 img{
+        width: 70% !important;
+        height: auto !important;
+        margin-left: 10px !important;
+    }
 }
